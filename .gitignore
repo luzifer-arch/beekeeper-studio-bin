@@ -2,4 +2,4 @@
 !.gitignore
 !.SRCINFO
 !PKGBUILD
-!update.sh
+!update_version.sh
