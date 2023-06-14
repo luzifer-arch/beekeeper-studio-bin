@@ -5,7 +5,7 @@
 # Contributor: Tássio Virgínio <tassiovirginio@gmail.com>
 
 pkgname='beekeeper-studio-bin'
-pkgver=3.9.14
+pkgver=3.9.17
 pkgrel=1
 pkgdesc='Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more'
 arch=('x86_64' 'aarch64')
@@ -18,8 +18,8 @@ source=("beekeeper-studio-${pkgver}-license::https://github.com/beekeeper-studio
 source_x86_64=("https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_amd64.deb")
 source_aarch64=("https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_arm64.deb")
 sha256sums=('1409fbbc5265c85da91684660c87f85d74c3fdc63a2d355169f40dac5cc7a078')
-sha256sums_x86_64=('f3c134f0934a79ecefa7d72ea30d6aba0075834fae5a11a03c99d4384454d5bc')
-sha256sums_aarch64=('ca7b7981ed40cafda06391296f080e6a0cfb517a8310d7fcfc8adafe1c95fde7')
+sha256sums_x86_64=('271f2d416f94b2cb9889701a2a2457635b052149032408078f438567b433de50')
+sha256sums_aarch64=('bd56405afadb2cbb15e7e906111e77ef475c1c6b0c0ed659d8b7f8da3dada30b')
 
 package() {
   tar -xvf 'data.tar.xz' -C "${pkgdir}"
