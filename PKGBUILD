@@ -8,18 +8,16 @@ pkgname='beekeeper-studio-bin'
 pkgver=4.6.0
 pkgrel=1
 pkgdesc='Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more'
-arch=('x86_64' 'aarch64')
+arch=('x86_64')
 url='https://www.beekeeperstudio.io'
 license=('MIT')
 depends=('libappindicator-gtk3' 'libnotify' 'libsecret' 'libxss' 'libxslt' 'nodejs' 'nss' 'xdg-utils')
 provides=(beekeeper-studio)
 conflicts=(beekeeper-studio)
-source=("beekeeper-studio-${pkgver}-license::https://github.com/beekeeper-studio/beekeeper-studio/raw/v${pkgver}/LICENSE.md")
-source_x86_64=("https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_amd64.deb")
-source_aarch64=("https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_arm64.deb")
-sha256sums=('1409fbbc5265c85da91684660c87f85d74c3fdc63a2d355169f40dac5cc7a078')
-sha256sums_x86_64=('175a604fb204f5d459228b445fea4b5301a94ef95d71b54897309780f62b169b')
-sha256sums_aarch64=('188f745e66caab369a6924b379022d73dac45b87bfdc2b3cfe7433036597d674')
+source=("beekeeper-studio-${pkgver}-license::https://github.com/beekeeper-studio/beekeeper-studio/raw/v${pkgver}/LICENSE.md"
+        "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_amd64.deb")
+sha256sums=('1409fbbc5265c85da91684660c87f85d74c3fdc63a2d355169f40dac5cc7a078'
+            '175a604fb204f5d459228b445fea4b5301a94ef95d71b54897309780f62b169b')
 
 package() {
   tar -xvf 'data.tar.xz' -C "${pkgdir}"

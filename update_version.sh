@@ -26,9 +26,6 @@ sed -i \
 # Update source hashes
 updpkgsums
 
-# Update .SRCINFO
-makepkg --printsrcinfo >.SRCINFO
-
 # Commit changes
-git add PKGBUILD .SRCINFO
+git add PKGBUILD
 git commit -m "${PKG} v${VER}"
