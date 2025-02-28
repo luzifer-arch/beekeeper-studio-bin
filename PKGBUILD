@@ -5,7 +5,7 @@
 # Contributor: Tássio Virgínio <tassiovirginio@gmail.com>
 
 pkgname='beekeeper-studio-bin'
-pkgver=5.0.9
+pkgver=5.1.4
 pkgrel=1
 pkgdesc='Modern and easy to use SQL client for MySQL, Postgres, SQLite, SQL Server, and more'
 arch=('x86_64')
@@ -17,7 +17,7 @@ conflicts=(beekeeper-studio)
 source=("beekeeper-studio-${pkgver}-license::https://github.com/beekeeper-studio/beekeeper-studio/raw/v${pkgver}/LICENSE.md"
         "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v${pkgver}/beekeeper-studio_${pkgver}_amd64.deb")
 sha256sums=('22b5a35031423ff3998ed524ff7464e071d25ad99fab5ce2ebb67158e62f7b17'
-            '437b42a7693ad17bcff27e0576479a66b4cfc7f1cb1b61424b88bf1e16323f48')
+            '8569aa89f3bf867c34e817e82f4a2b986d742831e332398f9c442e63fd0ff4e5')
 
 package() {
   tar -xvf 'data.tar.xz' -C "${pkgdir}"
